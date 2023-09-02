@@ -1,0 +1,19 @@
+.container__botao {
+    margin-top: 16px;
+}
+
+.btn {
+    background-color: #6278F7;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 28px 29px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    color: #95FFD4;
+}
