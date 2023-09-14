@@ -1,0 +1,46 @@
+h4 {
+    color: #6278F7;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h5 {
+    color: #212121;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.imagem__colab {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+}
+
+.content__up {
+    width: 262px;
+    height: 91px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.content__up img {
+    margin-top: 40px;
+}
+
+.content__down {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 110px;
+    max-width: 222px;
+}
+
+.content__down h4, h5 {
+    margin: 0px;
+}
+
+.content__down h4, h5 {
+    margin-bottom: 5px;
+}

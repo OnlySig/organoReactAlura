@@ -5,9 +5,7 @@ import { ListaSuspensa } from "../ListaSuspensa"
 import { BotaoCard } from "../BotaoCard"
 import { useState } from "react"
 
-export const CampoForm = (props) => {
-    const times = ["--","Vasco", "Pele", "Caxias"]
-    
+export const CampoForm = (props) => {    
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
     const [imagem, setImagem] = useState('');
@@ -21,7 +19,12 @@ export const CampoForm = (props) => {
             imagem,
             time
         });
+        setNome("")
+        setCargo("")
+        setImagem("")
+        setTime("")
     }
+    
 
     return (
         <>
@@ -32,7 +35,7 @@ export const CampoForm = (props) => {
                         <CampoTexto alterarElement={valor => setNome(valor)} valor={nome} obrigatorio = {true} label="Nome" placeholder="nome"/>
                         <CampoTexto alterarElement={valor => setCargo(valor)} valor={cargo} obrigatorio = {true} label="Cargo" placeholder="cargo"/>
                         <CampoTexto alterarElement={valor => setImagem(valor)} valor={imagem} obrigatorio = {true} label="Imagem" placeholder="imagem"/>
-                        <ListaSuspensa alterarElement={valor => setTime(valor)} valor={time} obrigatorio = {true} label="Time" itens={times}/>
+                        <ListaSuspensa alterarElement={valor => setTime(valor)} valor={time} obrigatorio = {true} label="Time" itens={props.times}/>
                         <BotaoCard>
                             Criar card
                         </BotaoCard>

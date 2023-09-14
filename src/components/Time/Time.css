@@ -1,0 +1,27 @@
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    text-align: center;
+}
+
+.colab__container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 42px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.time h3 {
+    font-size: 32px;
+    padding-bottom: 8px;
+    margin: 0;
+}
+
+.row {
+    width: 32px;
+    height: 4px;
+    background-color: black;
+}
