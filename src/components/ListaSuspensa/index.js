@@ -8,8 +8,8 @@ export const ListaSuspensa = (props) => {
 
     return (
         <div className="lista__container">
-            <label className="label__item" htmlFor="">{props.label}</label>
-            <select value = {props.valor} onChange = {e => props.alterarElement(e.target.value)} required = {props.obrigatorio} className="select__item">
+            <label className="label__item" htmlFor={props.id}>{props.label}</label>
+            <select id={props.id} value = {props.valor} onChange = {e => props.alterarElement(e.target.value)} required = {props.obrigatorio} className="select__item">
                 {props.itens.map(item => {
                     return <option key={item}>{item}</option>
                 })}

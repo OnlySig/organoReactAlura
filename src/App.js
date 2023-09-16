@@ -7,6 +7,9 @@ function App() {
 
   const times = [
     {
+      nome: ""
+    },
+    {
       nome: "Vasco",
       corPrimaria: "#E06B69",
       corSecundaria: "rgba(0, 0, 0, 0.10)"
@@ -48,7 +51,6 @@ function App() {
   const novoColaboradorAdd = (colaborador) => {
     setColaboradores([...colaboradores, colaborador])
   }
-  console.log(colaboradores)
   return (
       <>
         <Banner />

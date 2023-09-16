@@ -32,10 +32,10 @@ export const CampoForm = (props) => {
                 <form onSubmit={submitar} className="formularioContent">
                     <h1 className="title">Preencha os dados para criar o card do colaborador.</h1>
                     <div className="infoForms">
-                        <CampoTexto alterarElement={valor => setNome(valor)} valor={nome} obrigatorio = {true} label="Nome" placeholder="nome"/>
-                        <CampoTexto alterarElement={valor => setCargo(valor)} valor={cargo} obrigatorio = {true} label="Cargo" placeholder="cargo"/>
-                        <CampoTexto alterarElement={valor => setImagem(valor)} valor={imagem} obrigatorio = {true} label="Imagem" placeholder="imagem"/>
-                        <ListaSuspensa alterarElement={valor => setTime(valor)} valor={time} obrigatorio = {true} label="Time" itens={props.times}/>
+                        <CampoTexto id="nome" alterarElement={valor => setNome(valor)} valor={nome} obrigatorio = {true} label="Nome" placeholder="nome"/>
+                        <CampoTexto id="cargo" alterarElement={valor => setCargo(valor)} valor={cargo} obrigatorio = {true} label="Cargo" placeholder="cargo"/>
+                        <CampoTexto id="imagem" alterarElement={valor => setImagem(valor)} valor={imagem} obrigatorio = {true} label="Imagem" placeholder="imagem"/>
+                        <ListaSuspensa id="time" alterarElement={valor => setTime(valor)} valor={time} obrigatorio = {true} label="Time" itens={props.times}/>
                         <BotaoCard>
                             Criar card
                         </BotaoCard>

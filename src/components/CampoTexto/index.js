@@ -10,8 +10,8 @@ export const CampoTexto = (props) => {
 
     return (
         <div className="campo-texto">
-            <label htmlFor="">{props.label}</label>
-            <input value={props.valor} onChange={valores} required={props.obrigatorio} type="text" placeholder={props.placeholder === 'imagem' ? imagem : placeholderMod}/>
+            <label htmlFor={props.id}>{props.label}</label>
+            <input id={props.id} value={props.valor} onChange={valores} required={props.obrigatorio} type="text" placeholder={props.placeholder === 'imagem' ? imagem : placeholderMod}/>
         </div>
     )
 }

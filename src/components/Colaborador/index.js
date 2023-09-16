@@ -4,7 +4,7 @@ import "./Colaborador.css"
 
 export const Colaborador = ({nomeColab, cargoColab, imgColab, bgup}) => {
     return (
-        <div>
+        <div className="colaborador__item">
             <div className="content__up" style={{backgroundColor: bgup}}>
                 <img src={imgColab} alt="imagem da pessoa" className="imagem__colab"/>
             </div>

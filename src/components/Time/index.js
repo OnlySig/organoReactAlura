@@ -10,6 +10,7 @@ export const Time = (props) => {
                 <span className="row" style={{backgroundColor: props.corPrimaria}}></span>
                 <div className="colab__container">
                     {props.colaboradores.map(colaborador => <Colaborador 
+                        key={colaborador.nome}
                         nomeColab={colaborador.nome} 
                         imgColab={colaborador.imagem} 
                         cargoColab={colaborador.cargo} 
