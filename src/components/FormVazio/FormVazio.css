@@ -1,0 +1,25 @@
+.container__void {
+    display: flex;
+    justify-content: center;
+    padding: 37px 0px;
+}
+
+.vazio__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+    border: 1px solid black;
+    border-radius: 999px;
+    width: 77vw;
+}
+
+.title__void {
+    margin: 0;
+}
+
+.emoji__empty {
+    font-weight: 700;
+    font-size: 2rem;
+}

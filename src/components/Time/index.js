@@ -12,13 +12,14 @@ export const Time = (props) => {
                     {props.colaboradores.map(colaborador => <Colaborador 
                         key={colaborador.nome}
                         nomeColab={colaborador.nome} 
-                        imgColab={colaborador.imagem} 
+                        Livro={colaborador.livro}
                         cargoColab={colaborador.cargo} 
+                        imgColab={colaborador.imagem} 
                         timeColab={colaborador.time}
                         bgup={props.corPrimaria}
                     />)}
                 </div>
         </section>
-        : ''
+        : ""
     )
 }

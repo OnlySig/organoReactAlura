@@ -1,0 +1,23 @@
+.footer__container {
+    background-color: #F76262;
+    height: 213px;
+}
+
+.footer__itens {
+    background-image: url("/public/imgs/fundo.png");
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 60px;
+}
+
+.ancorFooter__container {
+    display: flex;
+    gap: 35px;
+    width: 254px;
+}
+
+.footer__span {
+    color: #FFF;
+}

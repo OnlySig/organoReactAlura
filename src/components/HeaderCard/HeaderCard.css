@@ -1,0 +1,32 @@
+button {
+    background-color: #ffffff;
+    border: none;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 160px 80px 160px;
+}
+
+.card__header h1 {
+    margin: auto;
+    color: #F76262;
+    font-weight: 400;
+}
+
+.span__item {
+    background-color: #F76262;
+    width: 64px;
+    height: 4px;
+}
+
+.titleCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 6vw;
+}
+

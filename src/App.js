@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Banner } from './components/Banner';
 import { CampoForm } from './components/CampoForm';
-import { Time } from './components/Time';
+import { Time } from "./components/Time";
+import { FormVazio } from './components/FormVazio';
+import { Footer } from './components/Footer';
 
 function App() {
 
@@ -10,37 +12,37 @@ function App() {
       nome: ""
     },
     {
-      nome: "Vasco",
+      nome: "Romance",
       corPrimaria: "#E06B69",
       corSecundaria: "rgba(0, 0, 0, 0.10)"
     }, 
     {
-      nome: "Santos",
+      nome: "Drama",
       corPrimaria: "#FFBA05",
       corSecundaria: "rgba(0, 0, 0, 0.10)"
     },
     {
-      nome: "Gremio",
+      nome: "Conto",
       corPrimaria: "#82CFFA",
       corSecundaria: "#E8F8FF"
     },
     {
-      nome: "Colorado",
+      nome: "Poesia",
       corPrimaria: "#000000",
       corSecundaria: "#FDE7E8"
     },
     {
-      nome: "Palmeiras",
+      nome: "Ficção",
       corPrimaria: "#57C278",
       corSecundaria: "#D9F7E9"
     },
     {
-      nome: "Corinthians",
+      nome: "Épicos",
       corPrimaria: "#E06B69",
       corSecundaria: "rgba(0, 0, 0, 0.10)"
     },
     {
-      nome: "Flamengo",
+      nome: "Terror",
       corPrimaria: "#000000",
       corSecundaria: "#FDE7E8"
     }
@@ -51,17 +53,20 @@ function App() {
   const novoColaboradorAdd = (colaborador) => {
     setColaboradores([...colaboradores, colaborador])
   }
+
   return (
       <>
         <Banner />
         <CampoForm times={times.map(time => time.nome)} cadastrado={colaborador => novoColaboradorAdd(colaborador)}/>
-        {times.map(time => <Time 
+        {colaboradores.length === 0 ? <FormVazio /> : times.map(time => <Time 
           key={time.nome} 
-          nomeTime={time.nome} 
+          nomeTime={time.nome}
+          Livro={colaboradores.map(colaborador => colaborador.livro)}
           corPrimaria={time.corPrimaria} 
           corSecundaria={time.corSecundaria} 
           colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
         />)}
+        <Footer/>
       </>
   );
 }

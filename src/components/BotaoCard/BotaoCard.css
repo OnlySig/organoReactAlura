@@ -3,17 +3,19 @@
 }
 
 .btn {
-    background-color: #6278F7;
+    background-color: #F76262;
     color: #FFF;
     font-size: 20px;
     font-weight: 700;
     padding: 28px 29px;
     border-radius: 10px;
-    border: none;
+    border: 1px solid #F76262;
     cursor: pointer;
     transition: .3s;
 }
 
 .btn:hover {
-    color: #95FFD4;
-}
+    color: #F76262;
+    padding: 28px 40px;
+    background-color: #FFF;
+}   
