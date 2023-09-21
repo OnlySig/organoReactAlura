@@ -10,7 +10,7 @@ export const Footer = () => {
                     <a href="#"><img src="/imgs/ig.png" alt=""/></a>
                 </div>
                     <img src="/imgs/logo.png" alt="" />
-                    <span className="footer__span">Reformulado por um aluno da Alura.</span>
+                    <span className="footer__span"><a href="https://github.com/OnlySig" target="_blank" rel="noreferrer">reformulado por um aluno da Alura.</a></span>
             </div>
         </div>
     )

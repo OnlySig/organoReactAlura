@@ -18,6 +18,7 @@
     width: 254px;
 }
 
-.footer__span {
+.footer__span a{
     color: #FFF;
+    text-decoration: none;
 }
